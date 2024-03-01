@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "arr"
+version = "0.1.0"
+description = "现在各种研报复现的文章和项目，但是存在格式不统一、数据源不统一、python 版本、包管理、数据更新困难、研报重复做等等问题，比较乱。所以，计划弄一个收集、整理各路英雄的研报复现的文章和项目，统一格式，统一数据源，成为一个统一的完善的研报复现大集合！"
+authors = ["jinniuai.com"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+polars = {extras = ["pandas"], version = "^0.20.13"}
+numpy = "^1.26.4"
+empyrical = "^0.5.5"
+alphalens = "^0.4.0"
+tqdm = "^4.66.2"
+jqdatasdk = "^1.9.2"
+seaborn = "^0.13.2"
+matplotlib = "^3.8.3"
+akshare = "^1.12.78"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
